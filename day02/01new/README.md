@@ -12,28 +12,39 @@
 * 稀少被调用的复杂函数和递归函数都不适合内联
 
 
-
 # 动态内存分配
 
 * 继续使用标准C库函数`malloc/calloc/realloc/free`
 * 使用new/delete操作符在堆中分配/释放内存
-  * `int* pi = new int; delete pi;`
-
+```c++
+  int* pi = new int; 
+  delete pi;
+```
 * 在分配内存时同时初始化
-  * `int* pi = new int(100);`
-
+```c++
+  int* pi = new int(100);
+  delete pi;
+```
 * 以数组方式new的也是以数组方式delete
-  * `int* pi = new int[4]{1,2}; delete[] pi;`
-
+```c++
+  int* pi = new int[4]{1,2}; 
+  delete[] pi;
+```
 * 通过new操作符分配N维数组，返回N-1维数组指针
-  * `int(*prow)[4] = new int[3][4];`
-  * `int(*ppage)[4][5] = new int[3][4][5];`
+```c++
+  int(*prow)[4] = new int[3][4];
+  delete[] prow;
+  
+  int(*ppage)[4][5] = new int[3][4][5];
+  delete[] ppage;
+```
 * 不能通过delete操作符释放已释放过的内存
 * delete野指针后果未定义，delete空指针安全
 * 内存分配失败，new操作符抛出`bad_alloc`异常
 * 定位分配
   * new(指针)类型(初值)
   * 在一个已分配的内存空间中创建对象
+
 
 
 
