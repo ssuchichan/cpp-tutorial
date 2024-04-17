@@ -60,7 +60,7 @@
   * 访问控制限定符仅作用于类，而非作用于对象，因此同一个类的不同对象，可以互相访问非公有部分
   * 对不同成员的访问控制属性加以区分，体现了C++作为面向对象程序设计语言的封装特性
   
-  ![Access Control](../../docs/pics/access_control.png)
+  ![Access Control](../../docs/pics/access.png)
 
 * 构造函数
   * 函数名和类名相同，且没有返回类型
