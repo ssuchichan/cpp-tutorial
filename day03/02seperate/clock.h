@@ -2,7 +2,6 @@
 #define INC_CLOCK_H
 
 #include <iostream>
-#include <ctime>
 #include <unistd.h>
 #include <iomanip>
 
