@@ -6,8 +6,8 @@ public:
     User(const string& m_name = "", int m_age = 0) {
         cout << "构造函数: " << this << endl;
         // 函数的作用域小，会隐藏类相同的变量
-        // m_name = m_name; //ERROR
-        // m_age = m_age; // ERROR
+        // m_name = m_name;
+        // m_age = m_age;
         this->m_name = m_name;
         this->m_age = m_age;
     }
