@@ -5,15 +5,12 @@
 * 左右操作数均可为左值或右值
 * 表达式的值为右值
 * 成员函数形式
-
   ```
   class LEFT {
   	const RESULT operator#(const RIGHT& right) const { ... }
   };
   ```
-
 * 全局函数形式
-
   ```
   const RESULT operator#(const LEFT& left, const RIGHT& right) { ... }
   ```
