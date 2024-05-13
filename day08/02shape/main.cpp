@@ -15,7 +15,7 @@ protected:
 class Rect : public Shape {
 public:
     Rect(int x, int y, int width, int height) : Shape(x, y), m_width(width), m_height(height) {}
-    void draw() {
+    void draw() override {
         cout << "draw Rect(" << m_x <<',' << m_y <<',' << m_width << ',' << m_height << ')' << endl;
     }
 private:
@@ -26,7 +26,7 @@ private:
 class Circle : public Shape {
 public:
     Circle(int x, int y, int radius) : Shape(x, y), m_radius(radius) {}
-    void draw() {
+    void draw() override {
         cout << "draw Circle(" << m_x <<',' << m_y << ',' << m_radius << ')' << endl;
     }
 private:
