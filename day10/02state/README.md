@@ -22,9 +22,7 @@
 * 流控制符（Stream Manipulator）
     * 标准库定义了一组特殊的全局函数，它们有的带有参数（在iomanip头文件中声明），有的不带参数（在iostream头文件中声明），可被直接嵌入到输入输出表达式中，影响后续输入输出格式，称为流控制符
 
-# IO流格式化函数
 
-![iofmtfunc](../../docs/pics/iofmtfunc.png)
 
 
 
