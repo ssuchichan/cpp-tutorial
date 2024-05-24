@@ -1,10 +1,10 @@
 # IO流状态
 
 * IO流内部维护当前状态，其值尾以下常量的位或
-    * ios::goodbit：0，一切正常
-    * ios::badbit：1，发生致命错误
-    * ios::eofbit：2，遇到文件尾
-    * ios::failbit：4，实际读写字节数未达预期
+    * `ios::goodbit`：0，一切正常
+    * `ios::badbit`：1，发生致命错误
+    * `ios::eofbit`：2，遇到文件尾
+    * `ios::failbit`：4，实际读写字节数未达预期
 
 * IO流类支持到bool类型的隐式转换
     * 发生致命错误或遇到文件尾，返回false，否则返回true

@@ -9,7 +9,6 @@ int main() {
         cout << boolalpha << ifs.good() << endl; // false
         cout << ifs.fail() << endl; // true
         cout << ifs.bad() << endl; // false
-
         return -1;
     }
 
@@ -21,15 +20,16 @@ int main() {
         cout << "read failed" << endl;
         if (ifs.eof()) {
             cout << "end of file" << endl;
-            return 0;
         }
         if (ifs.bad()) {
             cout << "read error" << endl;
-            return -1;
         }
-
-        return -1;
     }
+    ifs.clear();
+    ifs.seekg(ios::beg);
+    i = 0;
+    ifs >> i;
+    cout << i << endl;
 
     return 0;
 }
