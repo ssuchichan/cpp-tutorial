@@ -3,7 +3,7 @@
 * 无参流控制符
     * `流类型& 流控制符(流类型&)`
   
-![manipnoparam](../../docs/pics/manipnoparam1.png)
+![manipnoparam](../../docs/pics/manipnoparam.png)
 
 * 单参流控制符
 
